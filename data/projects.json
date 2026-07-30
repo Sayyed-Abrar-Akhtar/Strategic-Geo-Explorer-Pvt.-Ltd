@@ -1,0 +1,123 @@
+[
+  {
+    "id": "proj-1",
+    "slug": "po-river-basin-hydraulic-safety",
+    "title": "Po River Basin Hydraulic Safety Plan",
+    "category": "Hydraulic Engineering",
+    "client": "Po River Regional Authority",
+    "location": "Piedmont & Lombardy, Italy",
+    "year": 2023,
+    "excerpt": "Comprehensive 2D hydraulic modeling and localized design of bypass channels for high-flow containment.",
+    "description": [
+      "A complete hydraulic hazard reassessment was performed for a critical 45km stretch of the Po river basin using advanced HEC-RAS 2D simulation methodologies.",
+      "The project yielded three critical bypass designs, integrated with local ecological green belts, which reduced municipal flood risk index scores by over 45%."
+    ],
+    "coverImage": "/images/projects/po-river-hydraulics.jpg",
+    "gallery": [
+      "/images/projects/po-river-1.jpg",
+      "/images/projects/po-river-2.jpg"
+    ],
+    "relatedServiceSlugs": ["hydraulic-hydrological"]
+  },
+  {
+    "id": "proj-2",
+    "slug": "former-steel-foundry-remediation",
+    "title": "Industrial Foundry Soil Decontamination",
+    "icon": "leaf",
+    "category": "Environmental Remediation",
+    "client": "Metals & Co. S.p.A.",
+    "location": "Genoa, Italy",
+    "year": 2022,
+    "excerpt": "Comprehensive characterization and in-situ chemical oxidation treatment of heavy metal and PAH contaminants.",
+    "description": [
+      "Assessed deep heavy-metal and polycyclic aromatic hydrocarbon (PAH) concentrations across a defunct 12-hectare industrial foundry site.",
+      "Engineered an innovative in-situ chemical oxidation program, safeguarding deep aquifers and facilitating safe commercial reuse zone conversions."
+    ],
+    "coverImage": "/images/projects/foundry-remediation.jpg",
+    "gallery": [
+      "/images/projects/foundry-1.jpg",
+      "/images/projects/foundry-2.jpg"
+    ],
+    "relatedServiceSlugs": ["environmental-engineering"]
+  },
+  {
+    "id": "proj-3",
+    "slug": "apennines-highway-slope-stabilization",
+    "title": "Apennines A16 Highway Landslide Mitigation",
+    "category": "Geotechnical Surveys",
+    "client": "Autostrade d'Italia S.p.A.",
+    "location": "Campania, Italy",
+    "year": 2021,
+    "excerpt": "Stabilization of a 30,000 cubic meter active clay landslide overlooking a high-traffic highway corridor.",
+    "description": [
+      "Performed deep core drilling, seismic refraction profiling, and continuous inclinometer installation to understand deep clay slide kinematics.",
+      "Designed and supervised installation of a 120-micropile retaining wall structure coupled with deep subhorizontal drains and geogrid stabilization mats."
+    ],
+    "coverImage": "/images/projects/highway-slope.jpg",
+    "gallery": [
+      "/images/projects/highway-1.jpg",
+      "/images/projects/highway-2.jpg"
+    ],
+    "relatedServiceSlugs": ["geotechnical-surveys", "hazard-mitigation-disaster-recovery"]
+  },
+  {
+    "id": "proj-4",
+    "slug": "sicily-wind-farm-foundation-assessments",
+    "title": "Sicily Hills 60MW Wind Farm Feasibility",
+    "category": "Renewable Energy Consulting",
+    "client": "VentoSud Energia",
+    "location": "Enna, Sicily",
+    "year": 2023,
+    "excerpt": "Geological, geophysical and geotechnical investigation for 18 heavy wind turbine tower placements.",
+    "description": [
+      "Conducted down-hole seismic investigations and electrical resistivity imaging to map geological fracturing and determine dynamic stiffness properties of soils.",
+      "Optimized structural concrete pad and deep pile foundations to withstand intense seismic load distributions characteristic of the Central Sicilian hills."
+    ],
+    "coverImage": "/images/projects/wind-farm.jpg",
+    "gallery": [
+      "/images/projects/wind-1.jpg",
+      "/images/projects/wind-2.jpg"
+    ],
+    "relatedServiceSlugs": ["renewable-energy-consulting"]
+  },
+  {
+    "id": "proj-5",
+    "slug": "marghera-port-dredging-eia",
+    "title": "Port of Marghera Environmental Impact Assessment",
+    "category": "Environmental Impact Assessment",
+    "client": "Venice Port Authority",
+    "location": "Venice, Italy",
+    "year": 2022,
+    "excerpt": "Environmental impact study and regulatory support for deep canal dredging and sediment encapsulation.",
+    "description": [
+      "Coordinated a multi-seasonal EIA reporting program covering maritime acoustic pollution, hydrodynamics of Lagoon tides, and heavy metal dispersal in suspended sediments.",
+      "Successfully secured ministerial environmental approval for dredging 1.2 million cubic meters of industrial-adjacent canal bed sediments."
+    ],
+    "coverImage": "/images/projects/port-dredging.jpg",
+    "gallery": [
+      "/images/projects/port-1.jpg",
+      "/images/projects/port-2.jpg"
+    ],
+    "relatedServiceSlugs": ["environmental-impact-assessment", "coastal-marine-engineering"]
+  },
+  {
+    "id": "proj-6",
+    "slug": "amalfi-cliffs-seawall-restoration",
+    "title": "Amalfi Coast Historic Seawall Structural Assessment",
+    "category": "Coastal & Marine Engineering",
+    "client": "Municipality of Amalfi",
+    "location": "Salerno, Italy",
+    "year": 2024,
+    "excerpt": "Underwater bathymetric imaging and structural engineering analysis for wave-battered heritage masonry.",
+    "description": [
+      "Deployed high-resolution side-scan sonar and ROV-mounted cameras to identify voids and scouring beneath century-old sea walls.",
+      "Engineered an state-of-the-art pressure-grouted micro-concrete reinforcement schedule that preserves the outer aesthetic of the historic coastal road."
+    ],
+    "coverImage": "/images/projects/amalfi-seawall.jpg",
+    "gallery": [
+      "/images/projects/amalfi-1.jpg",
+      "/images/projects/amalfi-2.jpg"
+    ],
+    "relatedServiceSlugs": ["coastal-marine-engineering", "hazard-mitigation-disaster-recovery"]
+  }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "comm-1",
+    "slug": "river-ecosystem-workshops",
+    "title": "Community River Health & Hydrology Workshops",
+    "description": "We run periodic outreach programs for secondary school classes, providing interactive training on river hydrology, water quality monitoring, and soil run-off calculations.",
+    "image": "/images/community/river-workshops.jpg",
+    "date": "2024-04-12"
+  },
+  {
+    "id": "comm-2",
+    "slug": "seismic-safety-drills",
+    "title": "Public Earthquake Risk Seminars",
+    "description": "Our senior geologists lead local safety discussions, explaining seismic wave propagation and illustrating optimal home structural reinforcement strategies to citizens.",
+    "image": "/images/community/seismic-seminars.jpg",
+    "date": "2023-11-05"
+  }
+]
