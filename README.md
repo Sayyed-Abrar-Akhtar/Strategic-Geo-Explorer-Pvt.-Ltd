@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Apex GeoConsulting Corporate Website (Next.js + Tailwind CSS)
 
-## Getting Started
+Welcome to the corporate portal of **Apex GeoConsulting & Engineering S.r.l.**, a premier environmental consulting and geological survey engineering firm.
 
-First, run the development server:
+This is a professional-services / engineering consultancy multi-page website built using **Next.js (App Router) + TypeScript + Tailwind CSS**. The site is completely content-driven, structured so that all copywriting, SEO metadata, team profiles, capabilities, client endorsements, and case studies flow through a clean, typed abstraction layer.
 
+---
+
+## 🚀 Getting Started
+
+### 1. Installation
+Install the project dependencies using `pnpm`:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Development Server
+Launch the Next.js development server locally:
+```bash
+pnpm run dev
+```
+Navigate to [http://localhost:3000](http://localhost:3000) in your web browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Running Unit Tests
+We use **Vitest** for unit testing our data fetching and API abstraction layer. Execute the test suite with:
+```bash
+pnpm run test
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Production Build
+Compile a highly optimized production build:
+```bash
+pnpm run build
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 📁 Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+├── app/
+│   ├── api/contact/route.ts      # Validated route handler for Contact Form
+│   ├── about/page.tsx            # Founder values, story and team grid
+│   ├── services/                 # Services directory
+│   │   ├── page.tsx              # Capabilities list
+│   │   └── [slug]/page.tsx       # Dynamic individual service details page
+│   ├── projects/                 # Portfolio directory
+│   │   ├── page.tsx              # Filterable case studies
+│   │   └── [slug]/page.tsx       # Dynamic individual case study page
+│   ├── community/page.tsx        # CSR and outreach actions
+│   ├── contact/page.tsx          # Map location, office addresses, and form
+│   ├── privacy-policy/page.tsx   # Legal consent policies
+│   ├── layout.tsx                # Site-wide wrapper with Header and Footer
+│   ├── sitemap.ts                # Automatically generated SEO sitemap
+│   ├── robots.ts                 # Dynamic robots.txt exclusions
+│   └── manifest.ts               # Progressive Web App (PWA) manifest configuration
+├── data/                         # Local JSON resources (Mock Content Repository)
+│   ├── company.json              # Central legal details, addresses, socials
+│   ├── stats.json                # Count-up key numbers
+│   ├── services.json             # 7+ professional capabilities
+│   ├── team.json                 # 8+ technical partners & surveyors
+│   ├── projects.json             # 6+ historic infrastructure case studies
+│   ├── testimonials.json         # Client quotes & branding labels
+│   ├── community.json            # CSR initiatives
+│   └── pages.json                # COMPLETE copywriting for every page key
+├── lib/
+│   ├── api/                      # Abstracted API endpoints querying local JSON
+│   ├── seo/
+│   │   └── jsonld.ts             # Rich schema generators (Organization, LocalBusiness, Breadcrumbs, Articles)
+│   └── types/
+│       └── index.ts              # Global TypeScript strict interfaces
+└── public/
+    └── brand/                    # High-res master logo/branding assets
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🔄 Swapping Mock JSON with a Headless CMS / API
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Every component and route across this application pulls text, SEO parameters, arrays, and details from the functions defined inside `lib/api/`. This design guarantees that **zero component or template JSX changes** are required when transitioning from local JSON to a headless CMS (such as Sanity, Strapi, Contentful) or a backend server.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+To perform the switch, simply update the return statements inside the files under `lib/api/` to use real `fetch()` calls.
+
+### Example: Swapping Services API
+**Before (`lib/api/services.ts`):**
+```typescript
+import type { Service } from '@/lib/types';
+import servicesData from '@/data/services.json';
+
+export async function getServices(): Promise<Service[]> {
+  return servicesData as Service[];
+}
+```
+
+**After (Swapped with dynamic CMS fetch):**
+```typescript
+import type { Service } from '@/lib/types';
+
+export async function getServices(): Promise<Service[]> {
+  const response = await fetch('https://api.yourcms.com/v1/services', {
+    headers: {
+      'Authorization': `Bearer ${process.env.CMS_API_TOKEN}`
+    },
+    next: { revalidate: 3600 } // Cache and revalidate hourly
+  });
+  const data = await response.json();
+  return data.items as Service[];
+}
+```
+
+---
+
+## 🛡️ Strict Compliance & Standards
+
+- **TypeScript (Strict)**: Full type-safety guarantees across layouts, data layers, forms, and page rendering.
+- **Form Validation**: Contact form integrated with React Hook Form + Zod, performing comprehensive client-side and server-side validation.
+- **Accessibility**: Semantic HTML structures, logical heading flows (`h1` -> `h2` -> `h3`), strict color contrast, and proper descriptive `aria` parameters.
+- **JSON-LD & Search Engines**: Custom breadcrumbs lists, article indices, organization data, and map location tags are fully crawlable.
+- **Dynamic Site Maps**: All newly authored dynamic slugs in services or projects are immediately injected into `/sitemap.xml` automatically.
