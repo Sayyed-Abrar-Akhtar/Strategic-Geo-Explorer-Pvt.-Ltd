@@ -43,7 +43,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const initiatives = await getCommunityInitiatives();
   const communityEntries = initiatives.map((c) => ({
-    url: `${siteUrl}/community/${c.slug}`, // though we render inline, can support individual slugs
+    url: `${siteUrl}/community/${c.slug}`,
     lastModified: new Date(),
     changeFrequency: 'monthly' as const,
     priority: 0.5,
