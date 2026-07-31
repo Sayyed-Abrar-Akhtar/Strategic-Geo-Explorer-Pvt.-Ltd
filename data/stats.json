@@ -1,0 +1,6 @@
+[
+  { "id": "years", "label": "Years of Excellence", "value": 20, "suffix": "+" },
+  { "id": "projects", "label": "Successful Projects", "value": 520, "suffix": "+" },
+  { "id": "professionals", "label": "Specialized Consultants", "value": 14, "suffix": "" },
+  { "id": "disciplines", "label": "Engineering Disciplines", "value": 8, "suffix": "" }
+]

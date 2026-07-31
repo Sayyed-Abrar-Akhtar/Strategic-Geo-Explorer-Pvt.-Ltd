@@ -1,0 +1,74 @@
+[
+  {
+    "id": "team-1",
+    "name": "Dr. Alessandro Rossi",
+    "role": "Founder & Managing Director",
+    "profession": "Senior Geologist",
+    "bio": "Alessandro has over 25 years of geological survey expertise. He directs overall engineering strategy and is the lead expert for seismic micro-zonation studies.",
+    "photo": "/images/team/alessandro-rossi.jpg",
+    "order": 1
+  },
+  {
+    "id": "team-2",
+    "name": "Dr. Beatrice Bianchi",
+    "role": "Partner & Technical Director",
+    "profession": "Environmental Engineer",
+    "bio": "Beatrice oversees the soil remediation and pollutant modeling workflows. She is a recognized speaker on brownfield decontamination strategies.",
+    "photo": "/images/team/beatrice-bianchi.jpg",
+    "order": 2
+  },
+  {
+    "id": "team-3",
+    "name": "Ing. Carlo Ferrero",
+    "role": "Senior Consultant",
+    "profession": "Hydraulics Specialist",
+    "bio": "Carlo manages our hydraulic structures and flood risk mapping department. He design river restorations and major city rainwater networks.",
+    "photo": "/images/team/carlo-ferrero.jpg",
+    "order": 3
+  },
+  {
+    "id": "team-4",
+    "name": "Dr. Elena Moretti",
+    "role": "Senior Specialist",
+    "profession": "Geotechnical Engineer",
+    "bio": "Elena has structured dozens of deep foundations and slope stabilizing systems across Southern and Northern Europe. She is expert in geosynthetic materials.",
+    "photo": "/images/team/elena-moretti.jpg",
+    "order": 4
+  },
+  {
+    "id": "team-5",
+    "name": "Dr. Francesca Galli",
+    "role": "Consultant",
+    "profession": "GIS & Remote Sensing Analyst",
+    "bio": "Francesca creates spatial risk maps, processes satellite imagery for soil-movement indicators, and builds interactive client project maps.",
+    "photo": "/images/team/francesca-galli.jpg",
+    "order": 5
+  },
+  {
+    "id": "team-6",
+    "name": "Ing. Giovanni Russo",
+    "role": "Junior Partner",
+    "profession": "Renewable Infrastructure Expert",
+    "bio": "Giovanni specializes in the mechanical and structural constraints of wind turbine layouts and utility-scale solar mechanical frames.",
+    "photo": "/images/team/giovanni-russo.jpg",
+    "order": 6
+  },
+  {
+    "id": "team-7",
+    "name": "Laura Ricci",
+    "role": "Head of Environmental Permitting",
+    "profession": "Regulatory Specialist",
+    "bio": "Laura liaises with public administrations to obtain environmental clearances, ensuring full project compliance under regional laws.",
+    "photo": "/images/team/laura-ricci.jpg",
+    "order": 7
+  },
+  {
+    "id": "team-8",
+    "name": "Stefano Bruno",
+    "role": "Field Operations Lead",
+    "profession": "Lead Geognostic Surveyor",
+    "bio": "Stefano coordinates on-site drilling, piezometer installations, and sample extractions, ensuring rigorous chains of custody for chemical analysis.",
+    "photo": "/images/team/stefano-bruno.jpg",
+    "order": 8
+  }
+]

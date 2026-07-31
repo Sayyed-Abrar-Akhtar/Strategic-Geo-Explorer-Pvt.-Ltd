@@ -1,0 +1,34 @@
+{
+  "name": "Apex GeoConsulting",
+  "legalName": "Apex GeoConsulting & Engineering S.r.l.",
+  "tagline": "Environmental analysis, specialized geotechnical surveys and sustainable engineering assessments",
+  "description": [
+    "Apex GeoConsulting is a premier environmental engineering and geological advisory firm with over twenty years of history delivering geognostic and structural site studies.",
+    "We integrate a multidisciplinary network of experts—geologists, hydrologists, environmental lawyers, and civil engineers—to navigate contemporary ecological standards and land development policies."
+  ],
+  "foundedYear": 2004,
+  "address": {
+    "street": "Corso Vittorio Emanuele II, 45",
+    "city": "Turin",
+    "province": "TO",
+    "postalCode": "10125",
+    "country": "Italy"
+  },
+  "contact": {
+    "phone": "+39 011 555 1234",
+    "fax": "+39 011 555 5678",
+    "email": "contact@apexgeoconsulting.com",
+    "pec": "apexgeoconsulting@legalmail.it"
+  },
+  "legal": {
+    "vatNumber": "IT12345678901",
+    "registrationNumber": "REA TO-987654",
+    "shareCapital": "50.000 €"
+  },
+  "social": {
+    "linkedin": "https://www.linkedin.com/company/apex-geoconsulting",
+    "facebook": "https://www.facebook.com/apexgeoconsulting",
+    "instagram": "https://www.instagram.com/apexgeoconsulting"
+  },
+  "brochureUrl": "/documents/apex_brochure.pdf"
+}

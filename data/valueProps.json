@@ -1,0 +1,20 @@
+[
+  {
+    "id": "val-1",
+    "icon": "shield-check",
+    "title": "Strict Regulatory Compliance",
+    "description": "We ensure absolute adherence to local, national, and European environmental codes, avoiding liabilities."
+  },
+  {
+    "id": "val-2",
+    "icon": "microscope",
+    "title": "Scientific Accuracy",
+    "description": "Our geognostic modeling processes use high-fidelity sensors and strict double-blind soil lab procedures."
+  },
+  {
+    "id": "val-3",
+    "icon": "users-2",
+    "title": "Multidisciplinary Engineering",
+    "description": "We blend physical geology, hydrology, and structural engineering to deliver holistic safety solutions."
+  }
+]

@@ -1,0 +1,22 @@
+{
+  "testimonials": [
+    {
+      "id": "t-1",
+      "clientName": "Ing. Marco Valenti",
+      "quote": "Apex GeoConsulting delivered outstanding precision in their subsoil models. Their expertise kept our heavy rail infrastructure project safe and compliant under challenging geotechnical conditions.",
+      "role": "Chief Infrastructure Officer, NordRail Group"
+    },
+    {
+      "id": "t-2",
+      "clientName": "Dr. Sylvia Rost",
+      "quote": "Their environmental risk simulations and fast-tracked permitting assistance saved us months of development delay. Truly a world-class engineering consultancy.",
+      "role": "Director of Environmental Affairs, Helios Energy Corp"
+    }
+  ],
+  "clientLogos": [
+    { "id": "logo-1", "name": "Autostrade", "logoUrl": "/images/clients/autostrade.png" },
+    { "id": "logo-2", "name": "VentoSud", "logoUrl": "/images/clients/ventosud.png" },
+    { "id": "logo-3", "name": "Venice Port", "logoUrl": "/images/clients/venice-port.png" },
+    { "id": "logo-4", "name": "Metals S.p.A.", "logoUrl": "/images/clients/metals.png" }
+  ]
+}

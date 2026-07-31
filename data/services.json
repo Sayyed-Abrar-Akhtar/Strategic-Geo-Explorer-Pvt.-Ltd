@@ -1,0 +1,100 @@
+[
+  {
+    "id": "svc-1",
+    "slug": "environmental-engineering",
+    "title": "Environmental Remediation & Modeling",
+    "icon": "leaf",
+    "shortDescription": "Environmental risk assessment, characterization plans, groundwater flow modeling, and site cleanups.",
+    "fullDescription": [
+      "Strategic site characterization plans for brownfield and greenfield environments under national and local regulations.",
+      "Sophisticated numerical modeling of aquifer contaminants to evaluate and mitigate transport vectors.",
+      "Comprehensive drafting of emergency safety projects and custom-engineered remediation workflows."
+    ],
+    "featuredImage": "/images/services/environmental-remediation.jpg",
+    "order": 1
+  },
+  {
+    "id": "svc-2",
+    "slug": "hydraulic-hydrological",
+    "title": "Hydraulic & Hydrological Design",
+    "icon": "droplet",
+    "shortDescription": "Flood risk analysis, hydrological basin evaluations, and stormwater infrastructure design.",
+    "fullDescription": [
+      "Rigorous mapping of local hydraulic risks and basin-wide flood hazard zones.",
+      "Dynamic hydrological modeling of complex urban sewer networks and natural river channels.",
+      "Custom development of hydraulic mitigation schemes and climate-resilient water discharge infrastructure."
+    ],
+    "featuredImage": "/images/services/hydraulic-design.jpg",
+    "order": 2
+  },
+  {
+    "id": "svc-3",
+    "slug": "geotechnical-surveys",
+    "title": "Geotechnical & Geognostic Surveys",
+    "icon": "mountain",
+    "shortDescription": "Subsoil testing, slope stability modeling, core drilling, and foundation engineering.",
+    "fullDescription": [
+      "Advanced deep geognostic core drilling and soil mechanics laboratory coordination.",
+      "Static and dynamic slope stability analysis with real-time geotechnical instrumentation.",
+      "Expert structural recommendations for deep foundation stabilization and slope retaining systems."
+    ],
+    "featuredImage": "/images/services/geotechnical-surveys.jpg",
+    "order": 3
+  },
+  {
+    "id": "svc-4",
+    "slug": "environmental-impact-assessment",
+    "title": "Environmental Impact Assessment (EIA)",
+    "icon": "file-text",
+    "shortDescription": "Permit acquisition, regulatory compliance support, noise and atmospheric impact studies.",
+    "fullDescription": [
+      "End-to-end EIA reports conforming to the latest national environmental protection directives.",
+      "Specialized atmospheric modeling, acoustic simulation studies, and biodiversity impact indices.",
+      "Technical representation and documentation for cross-departmental regulatory public hearings."
+    ],
+    "featuredImage": "/images/services/environmental-impact.jpg",
+    "order": 4
+  },
+  {
+    "id": "svc-5",
+    "slug": "renewable-energy-consulting",
+    "title": "Renewable Energy Site Feasibility",
+    "icon": "zap",
+    "shortDescription": "Site selection, environmental constraints verification, and soil-foundation matching for green plants.",
+    "fullDescription": [
+      "Preliminary soil and environmental constraint screening for solar farms and wind turbine arrays.",
+      "Geophysical resistivity studies for grounding design and electrical infrastructure routing.",
+      "Comprehensive geohazard assessment maps to minimize long-term capital risk."
+    ],
+    "featuredImage": "/images/services/renewable-energy.jpg",
+    "order": 5
+  },
+  {
+    "id": "svc-6",
+    "slug": "coastal-marine-engineering",
+    "title": "Coastal & Marine Surveys",
+    "icon": "waves",
+    "shortDescription": "Seabed sediment analyses, marine hydrology, and breakwater or port foundation design.",
+    "fullDescription": [
+      "Precision marine geophysics and sub-bottom profiling for near-shore foundations.",
+      "Sediment characterization studies to support environmental dredging and beach nourishment.",
+      "Hydraulic simulation of maritime infrastructure including docks, breakwaters, and seawalls."
+    ],
+    "featuredImage": "/images/services/coastal-marine.jpg",
+    "order": 6
+  },
+  {
+    "id": "svc-7",
+    "slug": "hazard-mitigation-disaster-recovery",
+    "title": "Natural Hazard Mitigation",
+    "icon": "shield-alert",
+    "shortDescription": "Landslide stabilization, seismic micro-zonation studies, and emergency structural reinforcement.",
+    "fullDescription": [
+      "Detailed local seismic hazard assessments and site-specific response spectrum analysis.",
+      "Emergency geological modeling of landslide runout and rapid mitigation design plans.",
+      "Structural soil reinforcement technologies utilizing micropiles and advanced geosynthetics."
+    ],
+    "featuredImage": "/images/services/hazard-mitigation.jpg",
+    "order": 7
+  }
+]

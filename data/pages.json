@@ -1,0 +1,165 @@
+{
+  "home": {
+    "seo": {
+      "title": "Apex GeoConsulting | Geological Surveys & Environmental Engineering",
+      "description": "Professional engineering consultancy specialized in geotechnical surveys, hydraulic designs, environmental characterization, and risk assessment."
+    },
+    "hero": {
+      "headline": "Engineering a Safer, More Resilient Subsoil Future",
+      "subheadline": "Expert environmental consulting, state-of-the-art geotechnical surveys, and hydrogeological risk mitigations with twenty years of verified accuracy.",
+      "primaryCta": { "label": "See Our Work", "href": "/projects" },
+      "secondaryCta": { "label": "Download Brochure", "href": "/documents/apex_brochure.pdf" },
+      "image": "/images/hero/home-hero.jpg"
+    },
+    "cta": {
+      "headline": "Over twenty years of studying soil mechanics and environmental risks. Let's engineer your next challenge.",
+      "buttonLabel": "Get in Touch",
+      "buttonHref": "/contact"
+    }
+  },
+  "about": {
+    "seo": {
+      "title": "Our Story & Engineering Team | Apex GeoConsulting",
+      "description": "Learn about our founding, multidisciplinary engineering values, and our twenty years of dedicated geognostic and environmental research."
+    },
+    "hero": {
+      "eyebrow": "About Us",
+      "headline": "Twenty Years of Scientific and Geological Precision",
+      "subheadline": "We bridge classical geology with modern environmental and hydraulic design.",
+      "primaryCta": { "label": "View Our Portfolio", "href": "/projects" },
+      "image": "/images/hero/about-hero.jpg"
+    },
+    "sections": [
+      {
+        "id": "intro",
+        "heading": "Our Vision and History",
+        "body": [
+          "Founded in 2004, Apex GeoConsulting emerged from a desire to combine high-level earth sciences with robust civil and environmental engineering practices.",
+          "Over two decades, we have evolved into a full-scale consultancy, servicing public administrations and private industrial giants alike. We believe that safe foundations and thorough environmental modeling are the absolute pillars of sustainable development."
+        ]
+      }
+    ],
+    "cta": {
+      "headline": "Have questions about our soil investigation capabilities? Talk to an expert.",
+      "buttonLabel": "Contact Our Team",
+      "buttonHref": "/contact"
+    }
+  },
+  "services": {
+    "seo": {
+      "title": "Our Geological & Environmental Services | Apex GeoConsulting",
+      "description": "Explore our full suite of services including geotechnical surveys, hydraulic engineering, EIAs, and environmental site decontaminations."
+    },
+    "hero": {
+      "eyebrow": "Services",
+      "headline": "Comprehensive Engineering and Consulting Capabilities",
+      "subheadline": "From deep soil analysis to complex flood simulation, we cover the full cycle of geographic, structural, and regulatory challenges.",
+      "image": "/images/hero/services-hero.jpg"
+    },
+    "cta": {
+      "headline": "Need a specialized survey custom-fit to local regulations? Let's discuss.",
+      "buttonLabel": "Request an Estimate",
+      "buttonHref": "/contact"
+    }
+  },
+  "projects": {
+    "seo": {
+      "title": "Engineering Case Studies & Projects Portfolio | Apex GeoConsulting",
+      "description": "Discover our major works from high-risk highway slope stabilizations to complex industrial decontaminations and hydraulic structures."
+    },
+    "hero": {
+      "eyebrow": "Portfolio",
+      "headline": "Delivering Security & Compliance Across Complex Terrains",
+      "subheadline": "Explore our featured engineering and environmental projects that have shaped safer infrastructures.",
+      "image": "/images/hero/projects-hero.jpg"
+    },
+    "cta": {
+      "headline": "Ready to launch a new infrastructure development? Collaborate with our engineers.",
+      "buttonLabel": "Work With Us",
+      "buttonHref": "/contact"
+    }
+  },
+  "community": {
+    "seo": {
+      "title": "Corporate Social Responsibility & Outreach | Apex GeoConsulting",
+      "description": "Learn about our commitment to local community environmental awareness, seismic safety education, and water protection workshops."
+    },
+    "hero": {
+      "eyebrow": "Community CSR",
+      "headline": "Fostering Environmental and Geological Awareness",
+      "subheadline": "We believe engineering expertise should be shared to build more resilient communities and safeguard our local waterways.",
+      "image": "/images/hero/community-hero.jpg"
+    },
+    "sections": [
+      {
+        "id": "csr-philosophy",
+        "heading": "Our Social Stewardship",
+        "body": [
+          "As engineering professionals, our responsibility extends beyond paid client projects. We actively invest our time and specialized technical tools to educate citizens and the younger generation on hydraulic safety, climate change impacts, and subsoil conservation.",
+          "Through collaborations with regional schools and city councils, we provide hands-on workshops and public risk management seminars completely free of charge."
+        ]
+      }
+    ],
+    "cta": {
+      "headline": "Interested in partnering with our specialists for a local education seminar?",
+      "buttonLabel": "Propose an Initiative",
+      "buttonHref": "/contact"
+    }
+  },
+  "contact": {
+    "seo": {
+      "title": "Contact Our Engineering Offices | Apex GeoConsulting",
+      "description": "Get in touch with our Turin headquarters. Send us your inquiry, request soil survey estimates, or schedule a technical call."
+    },
+    "hero": {
+      "eyebrow": "Contact Us",
+      "headline": "Let's Solve Your Geo-Technical Challenges",
+      "subheadline": "Reach out directly to our Turin office or complete the form below. Our consultants will review and respond within 24 hours.",
+      "image": "/images/hero/contact-hero.jpg"
+    }
+  },
+  "privacy-policy": {
+    "seo": {
+      "title": "Privacy and Cookie Policy | Apex GeoConsulting",
+      "description": "Read how we collect, store, and process your personal details in compliance with European GDPR laws and contact regulations."
+    },
+    "hero": {
+      "headline": "Privacy & Cookie Policy"
+    },
+    "sections": [
+      {
+        "id": "data-controller",
+        "heading": "1. Data Controller",
+        "body": [
+          "The Data Controller is Apex GeoConsulting & Engineering S.r.l., with registered office in Corso Vittorio Emanuele II, 45 - 10125 Turin (TO), Italy. Email: contact@apexgeoconsulting.com.",
+          "We treat the privacy of our visitors, partners, and clients with supreme seriousness. Any personal data collected will be processed transparently, lawfully, and in accordance with the General Data Protection Regulation (GDPR) (EU) 2016/679."
+        ]
+      },
+      {
+        "id": "data-collection",
+        "heading": "2. Collected Personal Data",
+        "body": [
+          "We collect personal information that you provide directly through our Contact Form, including your Name, Email address, and the content of your message. Your consent is explicitly obtained prior to form dispatch.",
+          "Additionally, the website may collect technical diagnostic details (cookies, IP addresses) strictly necessary to serve the web application and optimize responsiveness."
+        ]
+      },
+      {
+        "id": "data-usage",
+        "heading": "3. Purposes of Processing",
+        "body": [
+          "To respond to requests for technical consultancy or project estimates.",
+          "To ensure proper operational maintenance and cybersecurity of our server platforms.",
+          "We will never sell, lease, or distribute your email addresses to third-party marketing companies."
+        ]
+      },
+      {
+        "id": "data-rights",
+        "heading": "4. Your Rights",
+        "body": [
+          "Under the GDPR regulation, you have the absolute right to request access to your personal data, request the correction or deletion of your records, restrict or object to certain processing, and exercise data portability.",
+          "To request records deletion, please transmit a written request to contact@apexgeoconsulting.com."
+        ]
+      }
+    ]
+  }
+}
