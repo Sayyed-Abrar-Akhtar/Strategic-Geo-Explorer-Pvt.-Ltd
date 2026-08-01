@@ -33,6 +33,27 @@ export default async function HomePage() {
   const testimonials = await getTestimonials();
   const clientLogos = await getClientLogos();
 
+  // Extract content dynamically to avoid hardcoding copy inside JSX
+  const servicesHeader = content.sections?.find((s) => s.id === 'services-header');
+  const servicesEyebrow = servicesHeader?.body?.[0] || 'Core Capabilities';
+  const servicesHeading = servicesHeader?.heading || 'Expert Geological & Technical Survey Solutions';
+
+  const aboutTeaser = content.sections?.find((s) => s.id === 'about-teaser');
+  const aboutEyebrow = aboutTeaser?.body?.[0] || 'Company Teaser';
+  const aboutHeading = aboutTeaser?.heading || 'Combining Earth Sciences with Innovative Structural Engineering';
+  const quoteText = aboutTeaser?.body?.[1] || 'A thorough understanding of subsurface structures is the only guarantee of durable infrastructure.';
+  const quoteAuthor = aboutTeaser?.body?.[2] || 'Dr. Alessandro Rossi, Founder';
+
+  const testimonialsHeader = content.sections?.find((s) => s.id === 'testimonials-header');
+  const testimonialsEyebrow = testimonialsHeader?.body?.[0] || 'Client Endorsements';
+  const testimonialsHeading = testimonialsHeader?.heading || 'What Industry Leaders Say';
+  const trustText = testimonialsHeader?.body?.[1] || 'Trusted by Lead Public Administrations & Industrial Operators';
+
+  const contactHeader = content.sections?.find((s) => s.id === 'contact-header');
+  const contactEyebrow = contactHeader?.body?.[0] || 'Inquiries';
+  const contactHeading = contactHeader?.heading || 'Request a Technical Consultation';
+  const contactSub = contactHeader?.body?.[1] || 'Our engineers review every query within 24 hours. Submit your study requirements below.';
+
   return (
     <main className="flex-grow">
 
@@ -45,10 +66,12 @@ export default async function HomePage() {
 
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-400/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-teal-400 ring-1 ring-inset ring-teal-400/20 mb-6">
-              <Icon name="award" className="h-3.5 w-3.5" />
-              Celebrating 20 Years of Survey Precision
-            </span>
+            {content.hero.eyebrow && (
+              <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-400/10 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wider text-teal-400 ring-1 ring-inset ring-teal-400/20 mb-6">
+                <Icon name="award" className="h-3.5 w-3.5" />
+                {content.hero.eyebrow}
+              </span>
+            )}
             <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-6xl leading-tight">
               {content.hero.headline}
             </h1>
@@ -83,10 +106,10 @@ export default async function HomePage() {
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-16">
             <div className="max-w-2xl">
               <span className="text-xs font-bold uppercase tracking-widest text-teal-600">
-                Core Capabilities
+                {servicesEyebrow}
               </span>
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl mt-3">
-                Expert Geological & Technical Survey Solutions
+                {servicesHeading}
               </h2>
             </div>
             <div className="mt-4 md:mt-0">
@@ -140,10 +163,10 @@ export default async function HomePage() {
             {/* Left side text */}
             <div className="space-y-6">
               <span className="text-xs font-bold uppercase tracking-widest text-teal-600">
-                Company Teaser
+                {aboutEyebrow}
               </span>
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-                Combining Earth Sciences with Innovative Structural Engineering
+                {aboutHeading}
               </h2>
               {company.description.map((p, idx) => (
                 <p key={idx} className="text-base text-slate-600 leading-relaxed">
@@ -166,10 +189,10 @@ export default async function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900/60 to-teal-950/40 z-10"></div>
               <div className="absolute inset-0 flex flex-col justify-end p-8 z-20">
                 <blockquote className="text-lg font-medium text-slate-100 italic">
-                  &ldquo;A thorough understanding of subsurface structures is the only guarantee of durable infrastructure.&rdquo;
+                  &ldquo;{quoteText}&rdquo;
                 </blockquote>
                 <p className="mt-4 text-sm font-bold text-teal-400">
-                  &mdash; Dr. Alessandro Rossi, Founder
+                  &mdash; {quoteAuthor}
                 </p>
               </div>
               <div className="absolute inset-0 flex items-center justify-center text-slate-700 italic font-semibold text-sm">
@@ -196,10 +219,10 @@ export default async function HomePage() {
             <div className="mb-20">
               <div className="text-center mb-12">
                 <span className="text-xs font-bold uppercase tracking-widest text-teal-600">
-                  Client Endorsements
+                  {testimonialsEyebrow}
                 </span>
                 <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl mt-2">
-                  What Industry Leaders Say
+                  {testimonialsHeading}
                 </h2>
               </div>
               <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
@@ -229,7 +252,7 @@ export default async function HomePage() {
           {clientLogos && clientLogos.length > 0 && (
             <div className="border-t border-slate-200/60 pt-16">
               <p className="text-center text-xs font-bold uppercase tracking-widest text-slate-500 mb-8">
-                Trusted by Lead Public Administrations & Industrial Operators
+                {trustText}
               </p>
               <div className="grid grid-cols-2 gap-8 md:grid-cols-4 items-center justify-items-center opacity-70">
                 {clientLogos.map((logo) => (
@@ -261,13 +284,13 @@ export default async function HomePage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <span className="text-xs font-bold uppercase tracking-widest text-teal-600">
-              Inquiries
+              {contactEyebrow}
             </span>
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 mt-3">
-              Request a Technical Consultation
+              {contactHeading}
             </h2>
             <p className="mt-4 text-base text-slate-600 max-w-lg mx-auto">
-              Our engineers review every query within 24 hours. Submit your study requirements below.
+              {contactSub}
             </p>
           </div>
           <ContactForm />

@@ -26,6 +26,12 @@ export default async function AboutPage() {
   const stats = await getStats();
   const team = await getTeamMembers();
 
+  const introSection = content.sections?.find((s) => s.id === 'intro');
+  const teamHeaderSection = content.sections?.find((s) => s.id === 'team-header');
+
+  const teamHeading = teamHeaderSection?.heading || 'Meet Our Consultants';
+  const teamSubheading = teamHeaderSection?.body?.[0] || 'A multidisciplinary collective of certified geologists, environmental modeling engineers, and regulatory specialists.';
+
   return (
     <main className="flex-grow">
       <PageHero
@@ -36,23 +42,21 @@ export default async function AboutPage() {
       />
 
       {/* Intro paragraph section */}
-      {content.sections && content.sections.length > 0 && (
+      {introSection && (
         <section className="py-16 sm:py-24 bg-white">
           <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center sm:text-left">
-            {content.sections.map((section) => (
-              <div key={section.id} className="space-y-6">
-                {section.heading && (
-                  <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-                    {section.heading}
-                  </h2>
-                )}
-                {section.body?.map((para, idx) => (
-                  <p key={idx} className="text-lg text-slate-600 leading-relaxed">
-                    {para}
-                  </p>
-                ))}
-              </div>
-            ))}
+            <div className="space-y-6">
+              {introSection.heading && (
+                <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
+                  {introSection.heading}
+                </h2>
+              )}
+              {introSection.body?.map((para, idx) => (
+                <p key={idx} className="text-lg text-slate-600 leading-relaxed">
+                  {para}
+                </p>
+              ))}
+            </div>
           </div>
         </section>
       )}
@@ -68,10 +72,10 @@ export default async function AboutPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
-              Meet Our Consultants
+              {teamHeading}
             </h2>
             <p className="mt-4 text-lg text-slate-600 leading-relaxed">
-              A multidisciplinary collective of certified geologists, environmental modeling engineers, and regulatory specialists.
+              {teamSubheading}
             </p>
           </div>
 

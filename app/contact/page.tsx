@@ -23,6 +23,11 @@ export default async function ContactPage() {
   const company = await getCompanyInfo();
   const localBusinessSchema = getLocalBusinessJsonLd(company);
 
+  // Extract contact page sections dynamically
+  const officeSection = content.sections?.find((s) => s.id === 'office-info');
+  const officeHeading = officeSection?.heading || 'Office Headquarters';
+  const officeParagraph = officeSection?.body?.[0] || 'Our core operations and analytical team operate from our central offices in Turin, Italy. Reach out directly for consultation slots or to arrange local soil sampling visits.';
+
   // Fallback map query using company's street and city
   const mapQuery = encodeURIComponent(`${company.address.street}, ${company.address.city}, ${company.address.country}`);
   const mapIframeSrc = `https://maps.google.com/maps?q=${mapQuery}&t=&z=14&ie=UTF8&iwloc=&output=embed`;
@@ -50,11 +55,10 @@ export default async function ContactPage() {
             <div className="space-y-8">
               <div>
                 <h2 className="text-2xl font-bold tracking-tight text-slate-900 sm:text-3xl">
-                  Office Headquarters
+                  {officeHeading}
                 </h2>
                 <p className="mt-4 text-base text-slate-600 leading-relaxed">
-                  Our core operations and analytical team operate from our central offices in Turin, Italy.
-                  Reach out directly for consultation slots or to arrange local soil sampling visits.
+                  {officeParagraph}
                 </p>
               </div>
 
