@@ -8,6 +8,12 @@ importers:
 
   .:
     dependencies:
+      '@hookform/resolvers':
+        specifier: ^5.5.7
+        version: 5.5.7(@standard-schema/spec@1.1.0)(react-hook-form@7.83.0(react@19.2.4))(zod@4.4.3)
+      lucide-react:
+        specifier: ^1.27.0
+        version: 1.28.0(react@19.2.4)
       next:
         specifier: 16.2.12
         version: 16.2.12(@babel/core@7.29.7)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)
@@ -17,10 +23,13 @@ importers:
       react-dom:
         specifier: 19.2.4
         version: 19.2.4(react@19.2.4)
+      react-hook-form:
+        specifier: ^7.83.0
+        version: 7.83.0(react@19.2.4)
+      zod:
+        specifier: ^4.4.3
+        version: 4.4.3
     devDependencies:
-      '@hookform/resolvers':
-        specifier: ^5.5.7
-        version: 5.5.7(@standard-schema/spec@1.1.0)(react-hook-form@7.83.0(react@19.2.4))(zod@4.4.3)
       '@tailwindcss/postcss':
         specifier: ^4
         version: 4.3.3
@@ -43,7 +52,7 @@ importers:
         specifier: ^19
         version: 19.2.3(@types/react@19.2.17)
       '@vitejs/plugin-react':
-        specifier: ^6.0.5
+        specifier: ^6.0.4
         version: 6.0.5(vite@8.2.0(@types/node@20.19.43)(jiti@2.7.0))
       eslint:
         specifier: ^9
@@ -54,12 +63,6 @@ importers:
       jsdom:
         specifier: ^30.0.1
         version: 30.0.1
-      lucide-react:
-        specifier: ^1.28.0
-        version: 1.28.0(react@19.2.4)
-      react-hook-form:
-        specifier: ^7.83.0
-        version: 7.83.0(react@19.2.4)
       tailwindcss:
         specifier: ^4
         version: 4.3.3
@@ -69,9 +72,6 @@ importers:
       vitest:
         specifier: ^4.1.10
         version: 4.1.10(@types/node@20.19.43)(jsdom@30.0.1)(vite@8.2.0(@types/node@20.19.43)(jiti@2.7.0))
-      zod:
-        specifier: ^4.4.3
-        version: 4.4.3
 
 packages:
 

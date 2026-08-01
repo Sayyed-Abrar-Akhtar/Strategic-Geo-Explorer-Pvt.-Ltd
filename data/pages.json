@@ -5,12 +5,42 @@
       "description": "Professional engineering consultancy specialized in geotechnical surveys, hydraulic designs, environmental characterization, and risk assessment."
     },
     "hero": {
+      "eyebrow": "Celebrating 20 Years of Survey Precision",
       "headline": "Engineering a Safer, More Resilient Subsoil Future",
       "subheadline": "Expert environmental consulting, state-of-the-art geotechnical surveys, and hydrogeological risk mitigations with twenty years of verified accuracy.",
       "primaryCta": { "label": "See Our Work", "href": "/projects" },
       "secondaryCta": { "label": "Download Brochure", "href": "/documents/apex_brochure.pdf" },
       "image": "/images/hero/home-hero.jpg"
     },
+    "sections": [
+      {
+        "id": "services-header",
+        "heading": "Expert Geological & Technical Survey Solutions",
+        "body": ["Core Capabilities"]
+      },
+      {
+        "id": "about-teaser",
+        "heading": "Combining Earth Sciences with Innovative Structural Engineering",
+        "body": [
+          "Company Teaser",
+          "A thorough understanding of subsurface structures is the only guarantee of durable infrastructure.",
+          "Dr. Alessandro Rossi, Founder"
+        ]
+      },
+      {
+        "id": "testimonials-header",
+        "heading": "What Industry Leaders Say",
+        "body": ["Client Endorsements", "Trusted by Lead Public Administrations & Industrial Operators"]
+      },
+      {
+        "id": "contact-header",
+        "heading": "Request a Technical Consultation",
+        "body": [
+          "Inquiries",
+          "Our engineers review every query within 24 hours. Submit your study requirements below."
+        ]
+      }
+    ],
     "cta": {
       "headline": "Over twenty years of studying soil mechanics and environmental risks. Let's engineer your next challenge.",
       "buttonLabel": "Get in Touch",
@@ -36,6 +66,13 @@
         "body": [
           "Founded in 2004, Apex GeoConsulting emerged from a desire to combine high-level earth sciences with robust civil and environmental engineering practices.",
           "Over two decades, we have evolved into a full-scale consultancy, servicing public administrations and private industrial giants alike. We believe that safe foundations and thorough environmental modeling are the absolute pillars of sustainable development."
+        ]
+      },
+      {
+        "id": "team-header",
+        "heading": "Meet Our Consultants",
+        "body": [
+          "A multidisciplinary collective of certified geologists, environmental modeling engineers, and regulatory specialists."
         ]
       }
     ],
@@ -116,7 +153,16 @@
       "headline": "Let's Solve Your Geo-Technical Challenges",
       "subheadline": "Reach out directly to our Turin office or complete the form below. Our consultants will review and respond within 24 hours.",
       "image": "/images/hero/contact-hero.jpg"
-    }
+    },
+    "sections": [
+      {
+        "id": "office-info",
+        "heading": "Office Headquarters",
+        "body": [
+          "Our core operations and analytical team operate from our central offices in Turin, Italy. Reach out directly for consultation slots or to arrange local soil sampling visits."
+        ]
+      }
+    ]
   },
   "privacy-policy": {
     "seo": {
